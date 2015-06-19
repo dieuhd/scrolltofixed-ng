@@ -1,0 +1,23 @@
+{
+  "name": "scrolltofixed-ng",
+  "version": "0.0.1",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dieuhd/scrolltofixed-ng.git"
+  },
+  "description": "This directive allows fix elements on the page (top, bottom, anywhere);",
+  "main": "src/scrolltofixed.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-karma": "~0.4.3",
+    "grunt-conventional-changelog": "~1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
