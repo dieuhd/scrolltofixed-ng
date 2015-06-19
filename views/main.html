@@ -1,0 +1,128 @@
+
+<div class="mainContent">
+    <div class="scrolltofixed">
+        <h2>ScrollToFixed Directive Module for AngularJS</h2>
+        <h1 id="scrolltofixed-ng" scroll-to-fixed>scrolltofixed-ng</h1>
+        <blockquote>
+            <p>AngularJS directive for <a href="https://github.com/bigspotteddog/ScrollToFixed">ScrollToFixed</a></p>
+        </blockquote>
+        <h1 id="requirements" scroll-to-fixed>Requirements</h1>
+        <ul>
+            <li>AngularJS</li>
+            <li><a href="https://github.com/bigspotteddog/ScrollToFixed">ScrollToFixed</a></li>
+            <li>Firefox 3+, Google Chrome 10+, Safari 5+, Internet Explorer 8/9, and Opera 11.60+.</li>
+        </ul>
+        <h1 id="testing" scroll-to-fixed>Testing</h1>
+
+        <p>We use <a href="http://karma-runner.github.io/0.8/index.html">karma</a> and jshint to ensure the quality of
+            the
+            code. The easiest way to run these checks is to use grunt:</p>
+    <pre>
+    <code>
+        npm install -g grunt-cli
+        npm install
+        bower install
+        grunt
+    </code>
+    </pre>
+
+        <p>
+            The karma task will try to open Chrome as a browser in which to run the tests. Make sure this is available
+            or
+            change the configuration in <code>test\karma.conf.js</code>
+        </p>
+
+        <h1 id="usage" scroll-to-fixed>Usage</h1>
+
+        <p>First, read the documentation of <a href="https://github.com/bigspotteddog/ScrollToFixed">ScrollToFixed</a>.
+        </p>
+
+        <p>We use <a href="http://bower.io/">bower</a> for dependency management. Install and save to bower.json by
+            running:
+        </p>
+    <pre>
+        <code>bower install srolltofixed-ng --save
+        </code>
+    </pre>
+        <p>This will copy the ui-date files into your <code>components</code> folder, along with its dependencies. </p>
+
+        <p>Load the script files in your application:</p>
+    <pre>
+    <code>
+&lt;script type="text/javascript" src="components/angular/angular.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/ScrollToFixed/jquery-scrolltofixed.js"&gt;&lt;/script&gt;
+&lt;script src="bower_components/scrolltofixed-ng/src/scrolltofixed.js"&gt;&lt;/script&gt;
+    </code>
+    </pre>
+        <p>Add the date module as a dependency to your application module:</p>
+    <pre><code>var myAppModule = angular.module('MyApp', ['scrolltofixed-ng'])
+    </code></pre>
+        <p>Apply the directive to your form elements:</p>
+    <pre><code>&lt;div scroll-to-fixed&gt; &lt;/div&gt;
+    </code></pre>
+        <h2 id="attributes">Attributes</h2>
+
+        <h3 id="scroll-to-fixed">scroll-to-fixed</h3>
+
+        <p><code>scroll-to-fixed</code> defines the options to pass to <code>ScrollToFixed</code>.</p>
+
+        <p>You can specify them via a plain object in your templates:</p>
+    <pre><code class="html">    &lt;div scroll-to-fixed="{ bottom: 0 }"&gt;ScrollToFixed&lt;/div&gt;
+    </code></pre>
+
+        <p>or a scoped object in your controllers:</p>
+    <pre><code class="javascript">
+    $scope.options = {
+        marginTop: 0
+    };
+    </code></pre>
+
+    <pre>
+        <code class="html">
+    &lt;div scroll-to-fixed="options"&gt;ScrollToFixed&lt;/div&gt;
+    </code></pre>
+Or Setting at config app for all scrolltofixed
+
+     <pre><code class="javascript">
+    .config(function (stfConfig){
+        stfConfig.marginTop = 120;
+    })
+    </code></pre>
+Or Setting at every controller for scrolltofixed of controller
+        <pre><code class="javascript">
+    .controller('MainCtrl', function ($scope,stfConfig) {
+        stfConfig.marginTop = 10;
+    });
+        </code></pre>
+        <h3 id="ng-model">ng-model</h3>
+
+        <p><code>ng-model</code> defines the object to watch and triggers a <code>resize</code> event on
+            <code>ScrollToFixed</code> when this object changes.</p>
+
+        <h2 id="events">Events</h2>
+
+        <h3 id="update">update</h3>
+
+        <p><code>update</code> triggers a <code>resize</code> event on <code>ScrollToFixed</code>.</p>
+
+        <h3 id="destroy">$destroy</h3>
+
+        <p><code>$destroy</code> triggers a <code>detach.ScrollToFixed</code> event on <code>ScrollToFixed</code>.</p>
+
+        <h2 id="license">License</h2>
+
+        <p><code>scrolltofixed-ng</code> is released under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT
+            license</a>.</p>
+    </div>
+    <div class="controll" scroll-to-fixed="{marginTop : 10}">
+        <h1>Setting</h1>
+        App Config:
+        <pre>
+            <code class="html">
+    stfConfig.marginTop = 10;
+    stfConfig.dontSetWidth = false;
+            </code>
+        </pre>
+
+    </div>
+</div>
