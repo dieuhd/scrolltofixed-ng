@@ -9,7 +9,8 @@
  */
 angular.module('testApp')
   .controller('MainCtrl', function ($scope,stfConfig) {
-        $scope.stfHeader = {
+
+        $scope.scrolltofixed_ng = {
 
         };
         $scope.requirementHeader = {
@@ -21,5 +22,4 @@ angular.module('testApp')
         $scope.usage = {
 
         };
-
   });

@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <meta name="description" content="">
+    <meta name="description" content="angular scrolltofixed is directive for angularjs that used to fix elements on the page (top, bottom, anywhere)">
+    <meta name="keyword" content="angular scrolltofixed,angularjs,angularjs scrolltofixed,scrolltofixed,ngscrolltofixed">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -11,6 +12,8 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
@@ -19,14 +22,55 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-
+<div class="navbar navbar-default" id="header" role="navigation" scroll-to-fixed="{marginTop:0}">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#/" class="navbar-brand">angular scrolltofixed</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="https://github.com/dieuhd/scrolltofixed-ng"><i class="fa fa-github"></i>
+                        Github</a>
+                </li>
+                <li><a href="https://github.com/bigspotteddog/ScrollToFixed"><i class="fa fa-question-circle"></i> ScrollToFixed</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
 <!-- Add your site or application content here -->
 <div class="container">
     <div ng-view=""></div>
 </div>
 
+<div class="navbar navbar-default" id="footer" scroll-to-fixed="{bottom:-20}">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#/" class="navbar-brand">angular scrolltofixed</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="https://github.com/dieuhd/scrolltofixed-ng"><i class="fa fa-github"></i>
+                        Github</a>
+                </li>
+                <li><a href="https://github.com/bigspotteddog/ScrollToFixed"><i class="fa fa-question-circle"></i> ScrollToFixed</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-64363860-1', 'auto');
+    ga('send', 'pageview');
 
+</script>
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>

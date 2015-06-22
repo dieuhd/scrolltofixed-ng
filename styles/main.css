@@ -84,6 +84,16 @@ body {
     border-bottom: 0;
   }
 }
+.container
+{
+    text-align: left;
+    width: 100%!important;
+    max-width: 100%!important;
+}
+.navbar-collapse
+{
+    border-color: #e7e7e7;
+}
 .mainContent
 {
     width: 1000px;

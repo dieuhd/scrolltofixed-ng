@@ -14,7 +14,8 @@ angular
     'scrolltofixed-ng'
   ])
   .config(function ($routeProvider,stfConfig) {
-        stfConfig.marginTop = 10;
+        stfConfig.marginTop = 52;
+        stfConfig.zIndex = 10;
         stfConfig.dontSetWidth = false;
     $routeProvider
       .when('/', {

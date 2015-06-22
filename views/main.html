@@ -2,17 +2,17 @@
 <div class="mainContent">
     <div class="scrolltofixed">
         <h2>ScrollToFixed Directive Module for AngularJS</h2>
-        <h1 id="scrolltofixed-ng" scroll-to-fixed>scrolltofixed-ng</h1>
+        <h1 id="scrolltofixed-ng" scroll-to-fixed="scrolltofixed_ng">scrolltofixed-ng</h1>
         <blockquote>
             <p>AngularJS directive for <a href="https://github.com/bigspotteddog/ScrollToFixed">ScrollToFixed</a></p>
         </blockquote>
-        <h1 id="requirements" scroll-to-fixed>Requirements</h1>
+        <h1 id="requirements" scroll-to-fixed="requirementHeader">Requirements</h1>
         <ul>
             <li>AngularJS</li>
             <li><a href="https://github.com/bigspotteddog/ScrollToFixed">ScrollToFixed</a></li>
             <li>Firefox 3+, Google Chrome 10+, Safari 5+, Internet Explorer 8/9, and Opera 11.60+.</li>
         </ul>
-        <h1 id="testing" scroll-to-fixed>Testing</h1>
+        <h1 id="testing" scroll-to-fixed="testing">Testing</h1>
 
         <p>We use <a href="http://karma-runner.github.io/0.8/index.html">karma</a> and jshint to ensure the quality of
             the
@@ -32,7 +32,7 @@
             change the configuration in <code>test\karma.conf.js</code>
         </p>
 
-        <h1 id="usage" scroll-to-fixed>Usage</h1>
+        <h1 id="usage" scroll-to-fixed="usage">Usage</h1>
 
         <p>First, read the documentation of <a href="https://github.com/bigspotteddog/ScrollToFixed">ScrollToFixed</a>.
         </p>
@@ -114,14 +114,14 @@ Or Setting at every controller for scrolltofixed of controller
         <p><code>scrolltofixed-ng</code> is released under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT
             license</a>.</p>
     </div>
-    <div class="controll" scroll-to-fixed="{marginTop : 10}">
+    <div class="controll" scroll-to-fixed="{marginTop : 50}">
         <h1>Setting</h1>
         App Config:
         <pre>
             <code class="html">
-    stfConfig.marginTop = 10;
+    stfConfig.marginTop = 52;
     stfConfig.dontSetWidth = false;
-            </code>
+    stfConfig.zIndex = 10;</code>
         </pre>
 
     </div>
