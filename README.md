@@ -18,11 +18,6 @@ We use [karma](http://karma-runner.github.io/0.8/index.html) and jshint to ensur
 ```
 The karma task will try to open Chrome as a browser in which to run the tests.  Make sure this is available or change the configuration in `test\karma.conf.js` 
 
-## Installation
-
-```bash
-bower install scrolltofixed-ng --save
-```
 
 # Usage
 
