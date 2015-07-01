@@ -30,7 +30,7 @@ First, read the documentation of [ScrollToFixed](https://github.com/bigspotteddo
 
 We use [bower](http://bower.io/) for dependency management.  Install and save to bower.json by running:
 
-    bower install srolltofixed-ng --save
+    bower install scrolltofixed-ng --save
 
 This will copy the ui-date files into your `components` folder, along with its dependencies. 
 
